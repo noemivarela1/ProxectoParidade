@@ -1,3 +1,5 @@
+package com.mycompany.proxectoparidade;
+
 
 import java.util.Scanner;
 
@@ -13,19 +15,23 @@ public class ParMain {
      * @param args argumentos da liña de comandos
      */
     public static void main(String[] args) {
-        Scanner in=new Scanner(System.in);
-        int numeroProba=lerNumero(in);
+        Scanner entrada=new Scanner(System.in);
+        int numeroProba=lerNumero(entrada);
         System.out.println(comprobarParidade(numeroProba));
     }
 
     static String comprobarParidade(int numeroProba) {
         String resultado;
-        if (numeroProba%2==0){
+        if (verificaPar(numeroProba)){
             resultado=O_NUMERO_E_PAR;
         }else{
             resultado=O_NUMERO_E_IMPAR;
         }
         return resultado;
+    }
+
+    static boolean verificaPar(int numeroProba) {
+        return numeroProba%2==0;
     }
     private static final String O_NUMERO_E_IMPAR = "O número é impar";
     private static final String O_NUMERO_E_PAR = "O número é par";
