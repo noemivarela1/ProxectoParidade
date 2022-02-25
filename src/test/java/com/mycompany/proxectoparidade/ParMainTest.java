@@ -1,21 +1,19 @@
 package com.mycompany.proxectoparidade;
 
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/UnitTests/JUnit5TestClass.java to edit this template
- */
-
 import com.mycompany.proxectoparidade.ParMain;
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 import org.junit.jupiter.api.Disabled;
 
 /**
- *
+ * Proba unitaria da clase ParMain
  * @author Noemí Varela Rodríguez <nvarela at iessanclemente.net>
  */
 public class ParMainTest {
     
+    /**
+     * Construtor por defecto
+     */
     public ParMainTest() {
     }
 
@@ -31,7 +29,7 @@ public class ParMainTest {
     }
 
     /**
-     * Test of comprobarParidade method, of class ParMain.
+     * Test of comprobarParidade method, of class ParMain para o número 0
      */
     @Test
     public void testComprobarParidadeCero() {
@@ -42,6 +40,9 @@ public class ParMainTest {
         assertEquals(expResult, resultado);
     }
     
+    /**
+     * Test do método ComprobarParidade para un número par positivo
+     */
     @Test
     public void testComprobarParidadeParPositivo() {
         System.out.println("comprobarParidade do 2");
@@ -51,6 +52,9 @@ public class ParMainTest {
         assertEquals(expResult, resultado);
     }
     
+    /**
+     * Test do método ComprobarParidade para un número impar positivo
+     */
     @Test
     public void testComprobarParidadeImparPositivo() {
         System.out.println("comprobarParidade do 1");
@@ -60,6 +64,9 @@ public class ParMainTest {
         assertEquals(expResult, resultado);
     }
     
+    /**
+     * Test do método ComprobarParidade para un número impar negativo
+     */
     @Test
     public void testComprobarParidadeImparNegativo() {
         System.out.println("comprobarParidade do -1");
@@ -69,7 +76,10 @@ public class ParMainTest {
         assertEquals(expResult, resultado);
     }
     
-     @Test
+    /**
+     * Test do método ComprobarParidade para un número par negativo
+     */
+    @Test
     public void testComprobarParidadeParNegativo() {
         System.out.println("comprobarParidade do -2");
         int numeroProba = -2;
@@ -79,7 +89,7 @@ public class ParMainTest {
     }
 
     /**
-     * Test of verificaPar method, of class ParMain.
+     * Test of verificaPar method, of class ParMain para o 0
      */
     @Test
     public void testVerificaParCero() {
@@ -88,6 +98,9 @@ public class ParMainTest {
         assertTrue(ParMain.verificaPar(numeroProba));
     }
     
+    /**
+     * Test do método verificaPar para un número par positivo
+     */
     @Test
     public void testVerificaParNumPar() {
         System.out.println("verificaPar de 10");
@@ -95,6 +108,9 @@ public class ParMainTest {
         assertTrue(ParMain.verificaPar(numeroProba));
     }
     
+    /**
+     * Test do método verificaPar para un número par positivo
+     */
     @Test
     public void testVerificaParNumImpar() {
         System.out.println("verificaPar de 11");
