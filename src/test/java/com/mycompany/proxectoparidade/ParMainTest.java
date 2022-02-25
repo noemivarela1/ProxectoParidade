@@ -1,13 +1,12 @@
 package com.mycompany.proxectoparidade;
 
-import com.mycompany.proxectoparidade.ParMain;
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 import org.junit.jupiter.api.Disabled;
 
 /**
  * Proba unitaria da clase ParMain
- * @author Noemí Varela Rodríguez <nvarela at iessanclemente.net>
+ * @author Noemi Varela Rodriguez <nvarela at iessanclemente.net>
  */
 public class ParMainTest {
     

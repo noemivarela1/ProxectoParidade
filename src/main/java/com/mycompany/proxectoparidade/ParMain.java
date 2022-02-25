@@ -6,7 +6,7 @@ import java.util.Scanner;
 
 /**
  * Comproba a paridade dun número enteiro
- * @author Noemí Varela Rodríguez <nvarela at iessanclemente.net>
+ * @author Noemi Varela Rodriguez <nvarela at iessanclemente.net>
  * @date 22 feb 2022
  */
 public class ParMain {
@@ -53,7 +53,6 @@ public class ParMain {
      */
     private static int lerNumero(Scanner in) {
         System.out.println("Introduce un número:");
-        int numeroProba=in.nextInt();
-        return numeroProba;
+        return in.nextInt();
     }
 }
